@@ -12,6 +12,7 @@ class BlogPost
     //Class fields
     protected $title;
     protected $content;
+    protected $author;
     
     /**
      * Class constructor
@@ -47,6 +48,17 @@ class BlogPost
     }
     
     /**
+     * Assign an author to a post
+     *
+     * @param int $author - A blogger's
+     * ID
+     */
+    function setAuthor($author)
+    {
+        $this->author = $author;
+    }
+    
+    /**
      * Retrieve the name of a post
      *
      * @return string
@@ -64,6 +76,17 @@ class BlogPost
     function getContent()
     {
         return $this->content;
+    }
+    
+    /**
+     * Retrieve the author of a post
+     *
+     * @return int
+     */
+    
+    function getAuthor()
+    {
+        return $this->author;
     }
 }
 ?>
