@@ -15,8 +15,8 @@
  
  $bloggers = new BloggersDB();
  
- $f3->route('GET /', function($f3) { 
-    $control = new HomeControl($f3);
+ $f3->route('GET /', function($f3, $params) { 
+    $control = new HomeControl($f3, $params);
     $control->viewHome();
  });
  

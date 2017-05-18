@@ -2,10 +2,12 @@
 class HomeControl
 {
     private $_f3;
+    private $_params;
     
-    public function __construct($_f3)
+    public function __construct($_f3, $_params)
     {
         $this->_f3 = $f3;
+        $this->_params = $params;
     }
     
     public function viewHome()
