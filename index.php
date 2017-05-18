@@ -15,17 +15,9 @@
  
  $bloggers = new BloggersDB();
  
- $f3->route('GET /', function($f3) {
-    $bloggingHeroes = $GLOBALS['bloggers']->showAllBloggers();
-    $bloggerNum = 0;
-    
-    $f3->set('bloggers', $bloggingHeroes);
-    $f3->set('bloggerNum', $bloggerNum);
-    
-    var_dump($bloggingHeroes);
-    
-    $view = new View;
-    echo Template::instance()->render('pages/blogs-home.html');
+ $f3->route('GET /', function($f3) { 
+    $control = new HomeControl($f3);
+    $control->viewHome();
  });
  
  $f3->run();
