@@ -1,0 +1,25 @@
+<div class="col-xs-3">
+    <h2>Blogging Heroes</h2>
+                
+    <ul>
+        <li><a href="#">Home</a></li>
+            <check if="{{ @loggedIn }}">
+                <true>
+                    <li><a href="#">My Blogs</a></li>
+                    <li><a href="#">Create Blog</a></li>
+                </true>
+                <false>
+                    <li><a href="#">Join Us</a></li>
+                </false>
+            </check>
+                <li><a href="#">About</a></li>
+                <check if="{{ @loggedIn }}">
+                    <true>
+                        <li><a href="#">Log Out</a></li>
+                    </true>
+                    <false>
+                        <li><a href="#">Log In</a></li>
+                    </false>
+                </check>
+    </ul>
+</div>
