@@ -13,8 +13,6 @@
  $f3->set('DEBUG', 3);
  $f3->set('loggedIn', false);
  
- $bloggers = new BloggersDB();
- 
  $f3->route('GET /', function($f3, $params) { 
     $control = new HomeControl($f3, $params);
     $control->viewHome();

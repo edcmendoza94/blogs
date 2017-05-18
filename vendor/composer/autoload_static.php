@@ -30,6 +30,7 @@ class ComposerStaticInit7b4c7b8077ddf663bc76aab094fac520
         'DB\\SQL\\Mapper' => __DIR__ . '/..' . '/bcosca/fatfree-core/db/sql/mapper.php',
         'DB\\SQL\\Session' => __DIR__ . '/..' . '/bcosca/fatfree-core/db/sql/session.php',
         'F3' => __DIR__ . '/..' . '/bcosca/fatfree-core/f3.php',
+        'HomeControl' => __DIR__ . '/../..' . '/controller/home-control.php',
         'ISO' => __DIR__ . '/..' . '/bcosca/fatfree-core/base.php',
         'Image' => __DIR__ . '/..' . '/bcosca/fatfree-core/image.php',
         'Log' => __DIR__ . '/..' . '/bcosca/fatfree-core/log.php',

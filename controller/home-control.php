@@ -4,7 +4,7 @@ class HomeControl
     private $_f3;
     private $_params;
     
-    public function __construct($_f3, $_params)
+    public function __construct($f3, $params)
     {
         $this->_f3 = $f3;
         $this->_params = $params;
@@ -14,20 +14,17 @@ class HomeControl
     {
         $db = new BloggersDB();
         
-        $bloggers = $db->getAllBloggers();
+        $bloggers = $db->showAllBloggers();
         $bloggersArr = array();
-        $i = 0;
         
         foreach($bloggers as $blogger) {
             $currentBlogger = new Blogger($blogger['username'], $blogger['email'],
                                           $blogger['password'], $blogger['bio'],
                                           $blogger['num_of_blogs']);
-            $bloggersArr[$i] = $currentBlogger;
-            
-           $i += 1; 
+            $bloggersArr[] = $currentBlogger;
         }
         
-        var_dump($bloggersArr);
+        //var_dump($bloggersArr);
         
         $this->_f3->set('bloggers', $bloggersArr);
         
