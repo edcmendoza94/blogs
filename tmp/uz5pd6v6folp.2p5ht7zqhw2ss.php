@@ -3,23 +3,28 @@
                 
     <ul>
         <li><a href="#">Home</a></li>
-            <?php if ($loggedIn): ?>
-                
-                    <li><a href="#">My Blogs</a></li>
-                    <li><a href="#">Create Blog</a></li>
-                
-                <?php else: ?>
-                    <li><a href="#">Join Us</a></li>
-                
-            <?php endif; ?>
-                <li><a href="#">About</a></li>
-                <?php if ($loggedIn): ?>
-                    
-                        <li><a href="#">Log Out</a></li>
-                    
-                    <?php else: ?>
-                        <li><a href="#">Log In</a></li>
-                    
-                <?php endif; ?>
+        <?php if ($loggedIn): ?>
+            
+                <li><a href="#">My Blogs</a></li>
+                <li><a href="#">Create Blog</a></li>
+            
+            <?php else: ?>
+                <li><a href="#">Join Us</a></li>
+            
+        <?php endif; ?>
+        
+        <li><a href="#">About</a></li>
+        
+        <?php if ($loggedIn): ?>
+            
+                <li><a href="#">Log Out</a></li>
+            
+            <?php else: ?>
+                <li><a href="#">Log In</a></li>
+            
+        <?php endif; ?>
     </ul>
+    <?php for ($i = 0;$i <= 30;$i++): ?>
+        <br>
+    <?php endfor; ?>
 </div>

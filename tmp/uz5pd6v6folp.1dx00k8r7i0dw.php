@@ -21,17 +21,20 @@
 </head>
 <body>
     <div class="container">
-            <!--<?php foreach (($bloggers?:[]) as $blogger): ?>
-                <div class="col-xs-3">
-                    <p><?= $blogger[$bloggerNum++]["username"] ?></p>
-                    <hr>
-                    <a href="#">View Blogs</a>
+        <div class="row">
+            <?php for ($i=0;$i < $numOfBloggers;$i++): ?>
+                <div class="panel panel-default col-xs-3">
+                    <div class="panel panel-body">
+                        <p><?= $bloggers[$i]->getUsername() ?></p>
+                        <hr>
+                        <a href="#">View Blogs</a>
                     
-                    Total: <?= $blogger[$bloggerNum++]["num_of_blogs"].PHP_EOL ?>
-                    <hr>
-                    Preview of Latest Blog: 
+                        Total: <?= $bloggers[$i]->getNumOfBlogs().PHP_EOL ?>
+                        <hr>
+                        Preview of Latest Blog:
+                    </div>
                 </div>
-            <?php endforeach; ?>-->
+            <?php endfor; ?>
         </div>
     </div>
 </body>

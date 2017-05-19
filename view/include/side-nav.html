@@ -3,23 +3,28 @@
                 
     <ul>
         <li><a href="#">Home</a></li>
-            <check if="{{ @loggedIn }}">
-                <true>
-                    <li><a href="#">My Blogs</a></li>
-                    <li><a href="#">Create Blog</a></li>
-                </true>
-                <false>
-                    <li><a href="#">Join Us</a></li>
-                </false>
-            </check>
-                <li><a href="#">About</a></li>
-                <check if="{{ @loggedIn }}">
-                    <true>
-                        <li><a href="#">Log Out</a></li>
-                    </true>
-                    <false>
-                        <li><a href="#">Log In</a></li>
-                    </false>
-                </check>
+        <check if="{{ @loggedIn }}">
+            <true>
+                <li><a href="#">My Blogs</a></li>
+                <li><a href="#">Create Blog</a></li>
+            </true>
+            <false>
+                <li><a href="#">Join Us</a></li>
+            </false>
+        </check>
+        
+        <li><a href="#">About</a></li>
+        
+        <check if="{{ @loggedIn }}">
+            <true>
+                <li><a href="#">Log Out</a></li>
+            </true>
+            <false>
+                <li><a href="#">Log In</a></li>
+            </false>
+        </check>
     </ul>
+    <loop from="{{ @i = 0 }}" to="{{ @i <= 30 }}" step="{{ @i++ }}">
+        <br>
+    </loop>
 </div>

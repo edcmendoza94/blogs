@@ -26,7 +26,10 @@ class HomeControl
         
         //var_dump($bloggersArr);
         
+        $numOfBloggers = sizeof($bloggersArr);
+        
         $this->_f3->set('bloggers', $bloggersArr);
+        $this->_f3->set('numOfBloggers', $numOfBloggers);
         
         echo Template::instance()->render('view/include/side-nav.html');
         echo Template::instance()->render('view/blogs-home.html');

@@ -21,17 +21,20 @@
 </head>
 <body>
     <div class="container">
-            <!--<repeat group="{{ @bloggers }}" value="{{ @blogger }}">
-                <div class="col-xs-3">
-                    <p>{{ @blogger[@bloggerNum++]["username"] }}</p>
-                    <hr>
-                    <a href="#">View Blogs</a>
+        <div class="row">
+            <loop from="{{ @i=0 }}" to="{{@i < @numOfBloggers }}" step="{{ @i++ }}">
+                <div class="panel panel-default col-xs-3">
+                    <div class="panel panel-body">
+                        <p>{{ @bloggers[@i]->getUsername() }}</p>
+                        <hr>
+                        <a href="#">View Blogs</a>
                     
-                    Total: {{ @blogger[@bloggerNum++]["num_of_blogs"] }}
-                    <hr>
-                    Preview of Latest Blog: 
+                        Total: {{ @bloggers[@i]->getNumOfBlogs() }}
+                        <hr>
+                        Preview of Latest Blog:
+                    </div>
                 </div>
-            </repeat>-->
+            </loop>
         </div>
     </div>
 </body>
