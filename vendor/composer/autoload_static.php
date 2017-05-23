@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit7b4c7b8077ddf663bc76aab094fac520
 {
     public static $classMap = array (
+        'AboutControl' => __DIR__ . '/../..' . '/controller/about-control.php',
         'Audit' => __DIR__ . '/..' . '/bcosca/fatfree-core/audit.php',
         'Auth' => __DIR__ . '/..' . '/bcosca/fatfree-core/auth.php',
         'Base' => __DIR__ . '/..' . '/bcosca/fatfree-core/base.php',

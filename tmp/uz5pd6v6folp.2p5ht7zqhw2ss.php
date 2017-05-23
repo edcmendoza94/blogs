@@ -2,7 +2,7 @@
     <h2>Blogging Heroes</h2>
                 
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="http://edcmendoza94.greenrivertech.net/328/blogs/">Home</a></li>
         <?php if ($loggedIn): ?>
             
                 <li><a href="#">My Blogs</a></li>
@@ -13,7 +13,7 @@
             
         <?php endif; ?>
         
-        <li><a href="#">About</a></li>
+        <li><a href="./about">About</a></li>
         
         <?php if ($loggedIn): ?>
             
