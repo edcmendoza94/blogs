@@ -35,6 +35,7 @@ class ComposerStaticInit7b4c7b8077ddf663bc76aab094fac520
         'ISO' => __DIR__ . '/..' . '/bcosca/fatfree-core/base.php',
         'Image' => __DIR__ . '/..' . '/bcosca/fatfree-core/image.php',
         'Log' => __DIR__ . '/..' . '/bcosca/fatfree-core/log.php',
+        'LoginControl' => __DIR__ . '/../..' . '/controller/login-control.php',
         'Magic' => __DIR__ . '/..' . '/bcosca/fatfree-core/magic.php',
         'Markdown' => __DIR__ . '/..' . '/bcosca/fatfree-core/markdown.php',
         'Matrix' => __DIR__ . '/..' . '/bcosca/fatfree-core/matrix.php',

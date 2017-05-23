@@ -21,7 +21,14 @@
 </head>
 <body>
             <div class="col-xs-9">
-                <h4><strong>The Internet is abuzz with our blog content.</strong></h4>
+                <div class="panel panel-default">
+                    <div class="panel panel-body">
+                        <h1>Blogging Heroes</h1>
+                        <p>A site where heroes can tell their tales.</p>
+                    </div>
+                </div>
+                
+                <h4><strong>Learn the stories of legends...or tell your own stories.</strong></h4>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ante eget est ullamcorper laoreet
                 cursus at elit. Duis eget dui magna. Nullam laoreet sapien non mauris pharetra, sed porttitor nulla viverra.
@@ -33,7 +40,7 @@
                                 
                 <p>"On this website, I feel much more mature, but at the same time I can just be myself." - Hayato</p>
                                     
-                <p>"Lorem ipsum dolor sit amet, nec convallis justo..." - blog contributor Terry Stone</p>
+                <p>"Reading the stories here is always fascinating!" - Sharena</p>
             </div>
         </div>
     </div>

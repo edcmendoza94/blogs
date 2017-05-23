@@ -22,7 +22,7 @@
                         <li><a href="#">Log Out</a></li>
                     
                     <?php else: ?>
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="./login">Log In</a></li>
                     
                 <?php endif; ?>
             </ul>
