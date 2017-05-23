@@ -20,53 +20,24 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
+        <div class="form-group">
             <div class="col-xs-9">
-                <form action="" method="POST" class="form-horizontal">
-                    <div class="col-xs-6">                                        
-                        <div class="form-group">
-                            <div class="col-xs-10">
-                                <input class="form-control" type="text" name="username" id="username" required>
-                            </div>
-                            <label class="control-label col-xs-2" for="username">Username</label>
-                            <br>
-                            <div class="col-xs-10">
-                                <input class="form-control" type="text" name="email" id="email" required>
-                             </div>
-                            <label class="control-label col-xs-2" for="email">Email</label>
-                        </div>
-                                        
-                        <div class="form-group">
-                            <div class="col-xs-10">
-                                <input class="form-control" type="password" name="password" id="password" required>
-                            </div>
-                            <label class="control-label col-xs-2" for="password">Password</label>
-                            <br>
-                            <div class="col-xs-10">
-                                <input class="form-control" type="password" name="verification" id="verification" required>
-                            </div>
-                            <label class="control-label col-xs-2" for="verification">Verify</label>
-                        </div>                                   
+                <div class="panel panel-default">
+                    <div class="panel panel-body">
+                        <h1>Continue Blogging</h1>
                     </div>
-                    <div id="rightInfo" class="col-xs-6">
-                        <div class="form-group">
-                            <div class="col-xs-8">
-                                 <input id="imageUpload" class="form-control" type="file" name="fileToUpload" id="fileToUpload" >
-                                                
-                            </div>
-                                            
-                            <label class="control-label col-xs-4" for="fileToUpload">Upload Portrait:</label>
-                        </div>
-                                        
-                        <div id="bio" class="form-group">
-                            <label class="control-label col-xs-12" for="bio">Quick Biography</label>
-                            <textarea class="form-control" type="text" rows="4" name="bio" id="bio" required></textarea>
-                        </div>
-                    </div>
-                                    
-                    <div class="col-xs-offset-5 col-xs-3">
-                        <input class="customBtn btn-lg" type="submit" value="Together We Blog">
-                    </div>
-
+                </div>
+                
+                <b>User Name</b>
+                <input class="form-control" type="text" name="firstName" id="firstName">
+                <b>Password</b>
+                <input class="form-control" type="text" name="lastName" id="lastName">
+                
+                
+                <div class="btn btn-md">
+                    <input class="form-control btn btn-primary"
+                       type="submit" value="Log In">
+                </div>
             </div>
         </div>
     </div>

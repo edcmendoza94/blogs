@@ -28,5 +28,10 @@
     $control->viewLogin();
  });
  
+ $f3->route('GET /signup', function($f3, $params) {
+    $control = new SignupControl($f3, $params);
+    $control->viewSignup();
+ });
+ 
  $f3->run();
 ?>

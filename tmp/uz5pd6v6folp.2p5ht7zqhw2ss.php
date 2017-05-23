@@ -11,7 +11,7 @@
                         <li><a href="#">Create Blog</a></li>
                     
                     <?php else: ?>
-                        <li><a href="#">Join Us</a></li>
+                        <li><a href="./signup">Join Us</a></li>
                     
                 <?php endif; ?>
         
