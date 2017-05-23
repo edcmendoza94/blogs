@@ -20,9 +20,7 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-9">
                 <h4><strong>The Internet is abuzz with our blog content.</strong></h4>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ante eget est ullamcorper laoreet

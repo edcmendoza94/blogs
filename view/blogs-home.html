@@ -20,21 +20,21 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <loop from="{{ @i=0 }}" to="{{@i < @numOfBloggers }}" step="{{ @i++ }}">
-                <div class="panel panel-default col-xs-3">
-                    <div class="panel panel-body">
-                        <p>{{ @bloggers[@i]->getUsername() }}</p>
-                        <hr>
-                        <a href="#">View Blogs</a>
+            <div class="col-xs-9">
+                <loop from="{{ @i=0 }}" to="{{@i < @numOfBloggers }}" step="{{ @i++ }}">
+                    <div class="panel panel-default col-xs-3">
+                        <div class="panel panel-body">
+                            <p>{{ @bloggers[@i]->getUsername() }}</p>
+                            <hr>
+                            <a href="#">View Blogs</a>
                     
-                        Total: {{ @bloggers[@i]->getNumOfBlogs() }}
-                        <hr>
-                        Preview of Latest Blog:
+                            Total: {{ @bloggers[@i]->getNumOfBlogs() }}
+                            <hr>
+                            Preview of Latest Blog:
+                        </div>
                     </div>
-                </div>
-            </loop>
+                </loop>
+            </div>
         </div>
     </div>
 </body>

@@ -12,10 +12,8 @@ class AboutControl
     
     public function viewAbout()
     {
-        $view = new View;
-        
         echo Template::instance()->render('view/include/side-nav.html');
-        echo $view->render('view/blogs-about.html');
+        echo Template::instance()->render('view/blogs-about.html');
     }
 }
 ?>

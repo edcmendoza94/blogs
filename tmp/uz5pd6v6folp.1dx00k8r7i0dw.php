@@ -20,21 +20,21 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <?php for ($i=0;$i < $numOfBloggers;$i++): ?>
-                <div class="panel panel-default col-xs-3">
-                    <div class="panel panel-body">
-                        <p><?= $bloggers[$i]->getUsername() ?></p>
-                        <hr>
-                        <a href="#">View Blogs</a>
+            <div class="col-xs-9">
+                <?php for ($i=0;$i < $numOfBloggers;$i++): ?>
+                    <div class="panel panel-default col-xs-3">
+                        <div class="panel panel-body">
+                            <p><?= $bloggers[$i]->getUsername() ?></p>
+                            <hr>
+                            <a href="#">View Blogs</a>
                     
-                        Total: <?= $bloggers[$i]->getNumOfBlogs().PHP_EOL ?>
-                        <hr>
-                        Preview of Latest Blog:
+                            Total: <?= $bloggers[$i]->getNumOfBlogs().PHP_EOL ?>
+                            <hr>
+                            Preview of Latest Blog:
+                        </div>
                     </div>
-                </div>
-            <?php endfor; ?>
+                <?php endfor; ?>
+            </div>
         </div>
     </div>
 </body>
